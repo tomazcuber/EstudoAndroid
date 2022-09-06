@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/dice_image1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="168dp"
+        android:layout_height="155dp"
         android:layout_gravity="center_horizontal"
 
         app:srcCompat="@drawable/empty_dice"
@@ -21,8 +21,8 @@
 
     <ImageView
         android:id="@+id/dice_image2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="168dp"
+        android:layout_height="132dp"
         android:layout_gravity="center_horizontal"
 
         app:srcCompat="@drawable/empty_dice"
@@ -34,11 +34,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/roll_label"/>
-<!--    <Button-->
-<!--        android:id="@+id/countup_button"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center_horizontal"-->
-<!--        android:text="@string/count_up_label"/>-->
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/clear_label"/>
 
 </LinearLayout>

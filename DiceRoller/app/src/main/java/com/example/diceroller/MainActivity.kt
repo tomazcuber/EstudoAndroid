@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener{ rollDice() }
 
-//        val countUpButton: Button = findViewById(R.id.countup_button)
-//        countUpButton.setOnClickListener { countUp() }
+        val clearButton: Button = findViewById(R.id.clear_button)
+        clearButton.setOnClickListener { clear() }
     }
 
     private fun getRandomDiceImage() : Int {
@@ -42,14 +42,8 @@ class MainActivity : AppCompatActivity() {
         diceImage2.setImageResource(getRandomDiceImage())
     }
 
-    private fun countUp() {
-//        val resultText: TextView = findViewById(R.id.result_text)
-//        if(resultText.text.toString() == getString(R.string.initial_label)) {
-//            resultText.text = "1"
-//        } else if(resultText.text.toString() != "6"){
-//            var resultValue : Int = resultText.text.toString().toInt()
-//            resultValue++
-//            resultText.text = resultValue.toString()
-//        }
+    private fun clear() {
+        diceImage1.setImageResource(R.drawable.empty_dice)
+        diceImage2.setImageResource(R.drawable.empty_dice)
     }
 }
