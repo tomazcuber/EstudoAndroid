@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="name">Tomaz Cuber</string>
+    <string name="yellow_star">Yellow Image</string>
+    <string name="bio">I am a brazilian Software Developer that works mostly with embedded systems,
+        but as of right now I\'m learning Kotlin and Android development with a focus
+        on Smart Payment Terminals (or Smart POS devices).
+        \nBesides payment applications, I\'m interested in
+        developing games, AR/VR applications, IOT and
+        embedded machine learning solutions.
+        \nThe latter is the focus of my graduation thesis for my
+        Bachelor\`s degree in Computer Science from the Federal University of Rio de Janeiro,
+        which I\'m currently developing as I write this app.
+        \nIf you found this app or source code and would like to get in touch,
+        feel free to send an e-mail my way at tomazcuber@outlook.com :)
+    </string>
+</resources>
