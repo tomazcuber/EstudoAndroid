@@ -26,6 +26,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun fillBgWithImage(view: View){
+        when (view.id) {
+
+            R.id.box_one_text -> view.setBackgroundResource(R.drawable.capi1)
+            R.id.box_two_text -> view.setBackgroundResource(R.drawable.capi2)
+            R.id.box_three_text -> view.setBackgroundResource(R.drawable.capi3)
+            R.id.box_four_text -> view.setBackgroundResource(R.drawable.capi4)
+            R.id.box_five_text -> view.setBackgroundResource(R.drawable.capi5)
+            else -> view.setBackgroundColor(Color.LTGRAY)
+        }
+    }
+
     private fun setListeners() {
 
         val boxOneText = findViewById<TextView>(R.id.box_one_text)
@@ -40,7 +52,8 @@ class MainActivity : AppCompatActivity() {
             boxFourText, boxFiveText, rootConstraintLayout)
 
         for(item in clickableViews){
-            item.setOnClickListener { makeColored(it) }
+//            item.setOnClickListener { makeColored(it) }
+            item.setOnClickListener { fillBgWithImage(it) }
         }
     }
 }
